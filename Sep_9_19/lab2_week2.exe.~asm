@@ -1,0 +1,44 @@
+;Simon'tip_'org 10h' is err to ip,program not beging from start?2020-9-15
+data segment
+    string  db "Chi lie mo $"
+    data1	db -10,-0001010b,-0ah,-128,+0,-0,
+    data2	db -52,7,60,90,-90,-70	;page 31 exe8
+data ends
+code segment
+     assume cs:code,ds:data
+start:
+  	mov ax,data
+  	mov ds,ax
+
+  	mov dx,offset string ;字符串显示
+  	mov ah,9
+  	int 21h
+     
+    MOV dl,'A' ;        单个字符'A'显示
+	MOV AH,02H
+	INT 21H
+
+	MOV DL, 10 ;单个字符10显示
+	MOV AH,02H
+	INT 21H
+	
+	MOV DL, '@'
+	MOV AH,02H
+	INT 21H
+		
+	mov al,-52     
+	add al,+7
+	
+	
+	mov al,60     
+	add al,90
+	
+	
+	mov al,-70     
+	add al,-90
+  
+     	
+   	mov ah,4ch
+	int 21h    
+code ends
+     end start
