@@ -5,10 +5,10 @@
         ORG  100H  
 
 ; Jump to start:
-	JMP START ;µÿ÷∑1
+	JMP START
 
 ; Data:
-msg1 DB 13, 10, 'Hello, World!', 13, 10, 13, 10 ,'$'   ;µÿ÷∑2
+msg1 DB 13, 10, 'Hello, World!', 13, 10, 13, 10 ,'$'
 msg2 DB 'Come on ,Youth,AO-LI-GEI', 13, 10, 13, 10 ,'$'
 msg3 DB 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
      DB 16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
@@ -17,7 +17,7 @@ msg4 DB 'Our journey is a sea of stars','$'	;Ω´°∞Œ“√«µƒ’˜Õæ «–«≥Ω¥Û∫£°±∑≠“Î≥…”¢Œ
 msg5 DB 'FanLongFei','$'           ;¥À¥¶¥Ê¥¢ƒ„µƒ–’√˚∆¥“Ù£¨ªÚ’ﬂ”¢Œƒ√˚◊÷∑˚¥Æ£¨≤¢ ‰≥ˆœ‘ æ
 msg6 DB '2001-01-22','$'             ;¥À¥¶¥Ê¥¢µ±«∞ƒÍ‘¬»’–≈œ¢£¨≤¢ ‰≥ˆœ‘ æ
 	
-XX  DB 11101111B	;¥À¥¶¥Ê¥¢DATA OF PAGE 31 EXE9  µÿ÷∑3
+XX  DB 11101111B	;¥À¥¶¥Ê¥¢DATA OF PAGE 31 EXE9
 YY  DB 11001001B
 ZZ  DB 10
 VV  DB 10
@@ -26,7 +26,7 @@ VV  DB 10
 ; Load address of msg to DX register:
 START:  	
 	;¥À¥¶º∆À„PAGE 31 EXE9£¨µ⁄“ªŒ 
-	MOV AL,XX	;COPY XX TO AL   µÿ÷∑4
+	MOV AL,XX	;COPY XX TO AL
 	MOV BL,YY	;COPY YY TO BL
 	ADD AL,BL	;AL=XX+YY
 			
