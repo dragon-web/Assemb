@@ -1,0 +1,24 @@
+; 第四次作业源代码，申辉 2020-9-27
+DATA	SEGMENT
+	NUM	DB 82H, 68H, 88H
+	SUM  	DB ?
+DATA  	ENDS
+CODE  	SEGMENT
+      	ASSUME CS:CODE, DS:DATA
+START:	MOV	AX, DATA ;将数据段地址赋值给AX
+      	MOV  	DS, AX ; AX值复制到DS
+      	MOV  	BX, OFFSET NUM  ;得到NUM实际值放入BX  
+      	MOV  	AL, [BX]   ;BX寄存器值放入AL
+      	INC  	BX   
+      	ADD  	AL, [BX] ;AL BX寄存器内部值求和放入AL
+      	INC  	BX
+      	ADD  	AL, [BX] ;AL BX寄存器内部值求和放入AL
+      	MOV  	SUM, AL  ;AL寄存器内部值给SUM
+	MOV  	AH, 4CH  ;退出本程序
+      	INT  	21H ; 返回操作系统
+CODE  	ENDS
+      	END  START
+	MOV  	AH, 4CH
+      	INT  	21H
+CODE  	ENDS
+      	END  START

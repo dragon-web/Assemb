@@ -1,0 +1,10 @@
+< SYMBOL TABLE >
+=======================================
+Name	Offset	Size	Type	Segment
+=======================================
+DATA	00000	-5	SEGMENT	(ITSELF)
+NUM	00000	1	VAR	DATA
+SUM	00003	1	VAR	DATA
+CODE	00001	-5	SEGMENT	(ITSELF)
+START	00000	-1	LABEL	CODE
+< END of SYMBOL TABLE >
