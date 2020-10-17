@@ -1,0 +1,9 @@
+< SYMBOL TABLE >
+=======================================
+Name	Offset	Size	Type	Segment
+=======================================
+DATAS	00000	-5	SEGMENT	(ITSELF)
+STACKS	00000	-5	SEGMENT	(ITSELF)
+CODES	00000	-5	SEGMENT	(ITSELF)
+START	00000	-1	LABEL	CODES
+< END of SYMBOL TABLE >
