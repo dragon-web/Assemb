@@ -1,0 +1,10 @@
+< SYMBOL TABLE >
+=======================================
+Name	Offset	Size	Type	Segment
+=======================================
+DSEG	00000	-5	SEGMENT	(ITSELF)
+HEX_TABLE	00000	1	VAR	DSEG
+SSEG	00001	-5	SEGMENT	(ITSELF)
+CSEG	00021	-5	SEGMENT	(ITSELF)
+START	00000	-1	FAR	CSEG
+< END of SYMBOL TABLE >
